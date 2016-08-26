@@ -1,0 +1,60 @@
+
+.status-wrap {
+  width: 100%;
+  height: 30px;
+  z-index:-2;white-space: nowrap;
+  overflow:hidden;
+}
+.status-wrap div:first-child{margin-left:-2%;}
+.status-progress {
+  margin:0;
+  margin-left:0.0%;
+  height: 30px;
+  width: 17%;
+  color: white ; 
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.8s;
+}
+.status-progress:before,
+.status-progress:after {
+  content: "";
+  position: absolute;
+  transition: all 0.8s;
+  z-index:-1;
+}
+.status-progress:before {
+  height: 50%;
+  width: 100%;
+  top: 0;
+  left: 0;
+    background: dimgrey;
+  -webkit-transform: skew(45deg);
+  -moz-transform: skew(45deg);
+  transform: skew(45deg);
+}
+.status-progress:after {
+  height: 50%;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background: dimgrey;
+  -webkit-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  transform: skew(-45deg);
+}
+
+ // No appended arrow on last item.
+.status-progress:last-child {
+    &:after {
+        border-width: 0;
+     }
+ }
+
+.status-progress:hover:before,
+.status-progress:hover:after {
+  background: dodgerblue;
+}
+

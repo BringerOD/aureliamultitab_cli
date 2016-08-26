@@ -1,0 +1,29 @@
+<template>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <ul class="nav nav-tabs">
+                <li repeat.for="workspace of controller.workSpaces" class="${workspace.isActive ? 'active' : ''}" role="presentation">
+                    
+   <!--<a href.bind="workspace.href" role="tab" data-toggle="tab">${workspace.viewModel} &nbsp;&nbsp;
+                            <button class="close" type="button" title="Close">×</button></a>-->
+                 
+                    <a href.bind="workspace.href"><button class="close"  click.trigger="closeWorkspace(workspace)" type="button">×</button> ${workspace.viewModel} &nbsp;&nbsp; </a>
+
+                </li>
+                
+            </ul>
+            <div class="container-fluid" repeat.for="workspace of controller.workSpaces">
+                <div show.bind="workspace.isActive" class="container-fluid">
+                    
+                    <compose containerless view-model="./views/${workspace.section}/${workspace.viewModel}" model.bind="workspace"  />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</template>

@@ -1,0 +1,34 @@
+<template>
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+
+        <div class="bs-example" data-example-id="striped-table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr repeat.for="item of customers">
+                        <th scope="row">${item.id}</th>
+                        <td>${item.name}</td>
+                        <td>
+                            <a href.bind="item.route">Open</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+ 
+</template>

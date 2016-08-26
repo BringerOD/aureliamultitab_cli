@@ -1,0 +1,68 @@
+// Bootstrap options
+
+$spacer:     0.50rem !default;
+
+$enable-flex:               true !default;
+$enable-rounded:            false !default;
+$enable-shadows:            true !default;
+$enable-gradients:          true !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+
+// Colors
+// ------------------------
+
+$white: #fff !default;
+$black: #000 !default;
+
+//copy from BS
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              #343434 !default;
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$gray-semi-light:        #777;
+$gray-semi-lighter:      #ddd;
+
+$brand-primary:         #5d8fc2 !default; //#618fb0 !default;
+$brand-success:         #64bd63 !default;
+$brand-info:            #5dc4bf !default; //#61c4b8 !default; //#5DADE2 !default;
+$brand-warning:         #f0b518 !default;
+$brand-danger:          #dd5826 !default; // #e5603b !default;
+
+$brand-primary-light: #dee4ee !default;
+
+$brand-success-light:         #ecfaec !default;
+$brand-info-light:            #f2fafa !default;
+$brand-warning-light:         lighten($brand-warning, 43%) !default;
+$brand-danger-light:          #fff2ef !default;
+
+$addition-bg: #f8f8f8 !default;
+
+
+$sidebar-bg-color: #242424 !default;
+$sidebar-color: #aaa !default;
+$sidebar-item-border-color: #2d2d2d !default;
+$sidebar-item-active-color: #F2BE35 !default;
+$sidebar-item-hover-bg-color: #111 !default;
+
+// Typography
+// -------------------------
+
+$text-color:            $gray !default;
+// $text-color: #57534A; //a bit brown?
+
+$font-size-root: 14px;
+
+$font-size-base:          1rem !default;
+$font-size-larger:        15px;
+$font-size-mini:          13px;
+
+$font-weight-bold: 700 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-normal: 400 !default;
+$font-weight-thin: 350 !default;
+$font-weight-base: $font-weight-thin !default;
+
+$font-size-smaller: 85% !default;
